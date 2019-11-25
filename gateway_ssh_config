@@ -1,0 +1,62 @@
+Host swan
+        HostName 10.126.150.20 
+        User libin1
+        ControlPersist yes
+        ControlMaster auto
+        ControlPath ~/.ssh/%r@%h:%p
+Host dev
+        HostName 10.103.8.3
+        User libin1
+        ProxyCommand ssh -W %h:%p swan
+Host a5
+        HostName 10.103.8.245
+        User libin1
+        ProxyCommand ssh -W %h:%p swan
+Host a6
+        HostName 10.103.8.246
+        User libin1
+        ProxyCommand ssh -W %h:%p swan
+Host a7
+        HostName 10.103.9.72
+        User libin1
+        ProxyCommand ssh -W %h:%p swan
+Host a8
+        HostName 10.120.196.18
+        User libin1
+        ProxyCommand ssh -W %h:%p swan
+Host a9
+        HostName 10.120.196.19
+        User libin1
+        ProxyCommand ssh -W %h:%p swan
+Host rs
+        HostName 10.136.27.171
+        User libin1
+        ProxyCommand ssh -W %h:%p swan
+Host devwj
+        HostName 10.136.35.3
+        User libin1
+        ProxyCommand ssh -W %h:%p swan
+Host a5wj
+        HostName 10.136.23.15
+        User libin1
+        ProxyCommand ssh -W %h:%p swan
+Host a6wj
+        HostName 10.136.23.16
+        User libin1
+        ProxyCommand ssh -W %h:%p swan
+Host s1
+        HostName 10.136.32.17
+        User libin1
+        ProxyCommand ssh -W %h:%p swan
+Host s2
+        HostName 10.103.8.2
+        User libin1
+        ProxyCommand ssh -W %h:%p swan
+Host k8s1
+        HostName 10.136.12.8
+        User libin1
+        ProxyCommand ssh -W %h:%p swan
+Host k8s2
+        HostName 10.136.130.40
+        User libin1
+        ProxyCommand ssh -W %h:%p swan
